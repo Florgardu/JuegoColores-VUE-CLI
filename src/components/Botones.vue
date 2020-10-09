@@ -1,7 +1,7 @@
 <template >
 
  <div id="navigator">
-            <button id="reset" @click="restart">New colors</button>
+            <button id="reset" @click="restart">New Colors</button>
             <span id="message"> {{mensaje}} </span>
             <button id="easy" v-bind:class="{ selected: !isHard }" @click="dificultadEasy">easy</button>
             <button id="hard" v-bind:class="{ selected: isHard }" @click="dificultadHard">hard</button>

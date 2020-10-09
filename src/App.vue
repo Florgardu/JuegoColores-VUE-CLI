@@ -57,13 +57,13 @@ export default {
   methods: {
         conocerGanador(colorcuadrado, cuadradoIndex){
             if(JSON.stringify(colorcuadrado) === JSON.stringify(this.colorJugar)){
-                this.mensaje="Ganaste";
+                this.mensaje="Ganaste!";
                 this.gano=true;
                 for (let index = 0; index < this.colors.length; index++) {
                     Object.assign(this.colors[index], colorcuadrado);
                   }
             }else{
-                this.mensaje="Intenta de nuevo";
+                this.mensaje="Intenta de nuevo!";
                 // le pongo el color del body para que parezca que desaparece
                 this.colors[cuadradoIndex].r = 255;
                 this.colors[cuadradoIndex].g = 255;
